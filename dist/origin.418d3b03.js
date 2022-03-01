@@ -1,0 +1,2 @@
+const e=document.getElementById("mainMenu"),t=document.getElementById("menuButton"),n=document.getElementById("dropdownButton"),i=document.getElementById("dropdownMenu");t.addEventListener("click",(()=>{e.classList.toggle("hidden")})),n.addEventListener("click",(()=>{i.classList.toggle("hidden")}));new Swiper(".swiper",{direction:"vertical",loop:!0,pagination:{el:".swiper-pagination"},navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"},scrollbar:{el:".swiper-scrollbar"}});
+//# sourceMappingURL=origin.418d3b03.js.map

@@ -1,0 +1,154 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media (min-width: 1024px) {
+  footer {
+    position: absolute;
+    bottom: 0;
+  }
+}
+.title {
+  font-family: "Stick No Bills", sans-serif;
+}
+
+.svg > div > svg {
+  fill: white;
+}
+
+.svg > div > svg:hover,
+.title:hover {
+  animation: fade 2s infinite;
+}
+
+@keyframes fade {
+  from {
+    fill: white;
+    color: white;
+  }
+  to {
+    fill: red;
+    color: red;
+  }
+}
+
+footer {
+  height: 100px;
+  position: relative;
+  bottom: 0;
+}
+
+.grid-pic {
+  max-width: 70%;
+  margin: auto;
+}
+.grid-pic:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.video-container .video {
+  height: 13rem;
+  width: 26rem;
+  margin: 2rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+  border-radius: 1rem;
+}
+
+.video-container .video iframe {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.video-container .video iframe:hover {
+  transition: 0.2s linear;
+  transform: scale(1.05);
+}
+
+.video-container .video .active {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: auto;
+  width: 80%;
+  box-shadow: 0 0 0 100vh rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+
+.video-container .video .active:hover {
+  transition: none;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+/// SWIPER
+
+.swiper {
+  width: 600px;
+  height: 300px;
+}
+
+///Contact
+
+p,
+input,
+textarea,
+label {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 5px;
+}
+
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: left;
+  padding: 20px 0;
+}
+
+input,
+textarea,
+label {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+}
+
+input,
+textarea {
+  background-color: transparent;
+  border: 0;
+  border-bottom: 2px solid #828282;
+}
+
+input[type="submit"] {
+  background-color: white;
+  padding: 15px 0;
+  color: black;
+  font-size: 18px;
+  border-bottom: none;
+  margin-top: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: rgb(211, 206, 206);
+  color: rgb(29, 26, 26);
+}
+
+input,
+textarea {
+  color: white;
+  font-size: 18px;
+  padding: 10px;
+}
+
+input:focus,
+textarea:focus {
+  outline: 1px solid #828282;
+}

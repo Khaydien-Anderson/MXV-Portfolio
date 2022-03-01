@@ -1,0 +1,23 @@
+{
+  "name": "mxv---portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parcel src/*.html",
+    "build": "parcel build src/*.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.2.1",
+    "autoprefixer": "^10.4.2",
+    "parcel": "^2.2.1",
+    "postcss": "^8.4.6",
+    "tailwindcss": "^3.0.18"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
+}
