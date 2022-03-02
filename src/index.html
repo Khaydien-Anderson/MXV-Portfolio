@@ -120,9 +120,14 @@
             Recent Work
         </h2>
         <div class="container-fluid mx-auto px-4 lg:pr-4 pb-2 lg:float-left">
-            <video class="mx-auto" poster="./img/silentworld.jpeg" controls>
+
+            <!-- <video  poster="./img/silentworld.jpeg" controls>
                 <source src="./videos/shortfilm_trailer.MOV" type="video/mp4" >
-            </video> 
+            </video>  -->
+
+            <video id="player" playsinline controls data-poster="/src/img/movie1.jpeg">
+                <source src="/src/videos/shortfilm_trailer.MOV" type="video/mp4" />
+            </video>
         </div>
         <h3 class="text-center text-lg pt-2">Silent World: The Short Film <a style="text-decoration: underline;" class="text-blue-400" href="https://www.bbc.co.uk/programmes/p09sdgc2">BBC iPlayer</a></h3>
         <div class="credits text-center text-xs text-gray-300">
@@ -186,6 +191,6 @@
         </div>
 </footer>
     <script type="module" src="js/main.js"></script>
-
+    <script src="https://cdn.plyr.io/3.6.12/plyr.js"></script>
 </body>
 </html>
